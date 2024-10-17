@@ -4,7 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="naranja">#E8920C</color>
     <color name="verde_bosque">#1ABB27</color>
+    <color name="verde">#D3F68B</color>
     <color name="lima">#B8FA00</color>
     <color name="rojo">#FF0000</color>
     <color name="amarillo">#FFD300</color>
+    <color name="azul">#80BFFF</color>
 </resources>

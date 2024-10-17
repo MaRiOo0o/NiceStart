@@ -102,4 +102,6 @@
     </string>
     <string name="action_settings" translatable="false">Settings</string>
     <string name="title_activity_my_tabbed" translatable="false">MyTabbedActivity</string>
+    <string name="cancel">cancel</string>
+    <string name="sign_up">sign up</string>
 </resources>
