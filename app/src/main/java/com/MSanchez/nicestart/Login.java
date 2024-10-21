@@ -25,9 +25,11 @@ public class Login extends AppCompatActivity {
         });
     }
 
-    /*  public void openMain(View v){
-          Intent intent = new Intent(MainActivity.this, MainActivity.class);
-      }   */
+    public void openMain(View v) {
+        Intent intent = new Intent(Login.this, Main.class);
+        startActivity(intent);
+
+    }
     public void openSignup(View v){
         Intent intent = new Intent(Login.this, Signup.class);
         startActivity(intent);
