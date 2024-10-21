@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradiente2"
     android:id="@+id/main"
     >
 
@@ -15,15 +14,15 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/hipman"></ImageView>
+        android:src="@drawable/girl"></ImageView>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.0"
         android:background="@color/rojo"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="94dp"></View>
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="58dp"></View>
 
     <ImageView
         android:id="@+id/logo"
@@ -44,7 +43,7 @@
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toTopOf="@id/til3"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         app:startIconDrawable="@drawable/ic_user"
         >
 
@@ -52,31 +51,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.6"
-            android:layout_marginTop="8dp"
             android:background="@color/white"
             android:hint="Username"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="@id/guideline3"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:startIconDrawable="@drawable/ic_key"
-        >
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alpha="0.6"
-            android:background="@color/white"
-            android:hint="Texto"></EditText>
-
-    </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="0dp"
@@ -105,9 +85,9 @@
     <Button
         android:id="@+id/button"
         style="@style/buttonflat"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/rojo"
         android:onClick="openMain"
-        android:text="@string/sign_up"
+        android:text="@string/login"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -117,7 +97,8 @@
         android:id="@+id/buttoninverse"
         style="@style/buttonoutlined"
         android:layout_height="60dp"
-        android:text="@string/cancel"
+        android:onClick="openSignup"
+        android:text="@string/signup"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/button"
@@ -140,3 +121,5 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradiente2"
     android:id="@+id/main"
     >
 
@@ -15,7 +15,7 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl"></ImageView>
+        android:src="@drawable/girl" />
 
     <View
         android:layout_width="match_parent"
@@ -23,18 +23,17 @@
         android:alpha="0.0"
         android:background="@color/rojo"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="58dp"></View>
+        tools:layout_editor_absoluteY="58dp" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="18dp"
         android:src="@drawable/ic_action"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        ></ImageView>
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -53,7 +52,7 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Username"></EditText>
+            android:hint="Username" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

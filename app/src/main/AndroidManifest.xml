@@ -16,10 +16,10 @@
             android:name=".Signup"
             android:exported="true"
 
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".Login"
             android:theme="@style/Theme.NiceStart.ActionBar"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

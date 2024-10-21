@@ -15,25 +15,26 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl" />
+        android:src="@drawable/hipman"></ImageView>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.0"
         android:background="@color/rojo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="58dp" />
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="94dp"></View>
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/ic_action"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        ></ImageView>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -43,7 +44,7 @@
         android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintTop_toTopOf="@id/til3"
         app:startIconDrawable="@drawable/ic_user"
         >
 
@@ -51,12 +52,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alpha="0.6"
+            android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:hint="Username" />
+            android:hint="Username"></EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:startIconDrawable="@drawable/ic_key"
+        >
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:background="@color/white"
+            android:hint="Texto"></EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="0dp"
@@ -85,9 +105,9 @@
     <Button
         android:id="@+id/button"
         style="@style/buttonflat"
-        android:backgroundTint="@color/rojo"
+        android:backgroundTint="@color/black"
         android:onClick="openMain"
-        android:text="@string/login"
+        android:text="@string/sign_up"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
@@ -97,8 +117,7 @@
         android:id="@+id/buttoninverse"
         style="@style/buttonoutlined"
         android:layout_height="60dp"
-        android:onClick="openSignup"
-        android:text="@string/signup"
+        android:text="@string/cancel"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/button"
@@ -121,5 +140,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
