@@ -14,8 +14,8 @@
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/girl"></ImageView>
-
+        ></ImageView>
+    <!--android:src="@drawable/girl"-->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -86,7 +86,7 @@
         android:id="@+id/button"
         style="@style/buttonflat"
         android:backgroundTint="@color/rojo"
-        android:onClick="openMain"
+        android:onClick="openProfile"
         android:text="@string/login"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"

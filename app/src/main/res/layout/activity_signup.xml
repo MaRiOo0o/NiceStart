@@ -11,11 +11,12 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/girl"
+        android:id="@+id/boy"
         android:scaleType="fitStart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/hipman"></ImageView>
+        ></ImageView>
+        <!--android:src="@drawable/hipman"-->
 
     <View
         android:layout_width="match_parent"
@@ -107,7 +108,7 @@
         style="@style/buttonflat"
         android:backgroundTint="@color/black"
         android:text="@string/sign_up"
-        android:onClick="openMain"
+        android:onClick="openProfile"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
