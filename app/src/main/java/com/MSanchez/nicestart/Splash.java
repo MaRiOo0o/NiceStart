@@ -13,6 +13,7 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -34,10 +35,11 @@ public class Splash extends AppCompatActivity {
 
 
         ImageView cloud = findViewById(R.id.logo);
-
+        TextView texto=findViewById(R.id.texto);
 
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.blink);
         cloud.startAnimation(myanim);
+        texto.startAnimation(myanim);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -55,7 +57,8 @@ public class Splash extends AppCompatActivity {
                 .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
 //                .circleCrop()
                 .into(mSea);
-
+        Animation myanim2 = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        mSea.startAnimation(myanim2);
     }
 
 private void openApp() {
