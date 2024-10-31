@@ -18,11 +18,16 @@ import android.widget.TextView;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class Splash extends AppCompatActivity {
+
+    private LottieAnimationView animationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +37,9 @@ public class Splash extends AppCompatActivity {
 
         openApp();
 
-
+        animationView = findViewById(R.id.animationView);
+        animationView.setAnimation(R.raw.carga);             //Nombre de la animacion en res/raw
+        animationView.setRepeatCount(LottieDrawable.INFINITE);
 
         ImageView cloud = findViewById(R.id.logo);
         TextView texto=findViewById(R.id.texto);
@@ -46,6 +53,8 @@ public class Splash extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
         ImageView mSea = findViewById(R.id.sea);
 
         Glide.with(this)
