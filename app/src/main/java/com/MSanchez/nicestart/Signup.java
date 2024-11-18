@@ -38,7 +38,7 @@ public class Signup extends AppCompatActivity {
 
     }
     public void openProfile(View v) {
-        Intent intent = new Intent(Signup.this, Profile.class);
+        Intent intent = new Intent(Signup.this, Main.class);
         startActivity(intent);
 
     }
