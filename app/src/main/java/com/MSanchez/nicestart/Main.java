@@ -1,5 +1,6 @@
 package com.MSanchez.nicestart;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -12,11 +13,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class Main extends AppCompatActivity {
 
@@ -49,6 +53,8 @@ public class Main extends AppCompatActivity {
 
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -109,7 +115,33 @@ public class Main extends AppCompatActivity {
             Intent intent =new Intent(Main.this,MainBab.class);
             startActivity(intent);
         }*/
+        if (id == R.id.item5) {
+            showAlertDialogButtonClicked(Main.this);
+        }
         return super.onOptionsItemSelected(item);
 
+    }
+    public void showAlertDialogButtonClicked(Main mainActivity) {
+
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.ic_key);
+        builder.setCancelable(true);
+
+        //builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+          builder.setPositiveButton("Scrolling", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(Main.this, Profile.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
