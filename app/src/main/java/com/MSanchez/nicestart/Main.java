@@ -111,10 +111,10 @@ public class Main extends AppCompatActivity {
             Toast toast2 = Toast.makeText(this,"Fixing",Toast.LENGTH_LONG);
             toast2.show();
         }
-        /*if(id==R.id.item3){
-            Intent intent =new Intent(Main.this,MainBab.class);
+        if(id==R.id.item3){
+            Intent intent =new Intent(Main.this,Profile.class);
             startActivity(intent);
-        }*/
+        }
         if (id == R.id.item5) {
             showAlertDialogButtonClicked(Main.this);
         }
@@ -135,7 +135,7 @@ public class Main extends AppCompatActivity {
           builder.setPositiveButton("Scrolling", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(Main.this, Profile.class);
+                Intent intent = new Intent(Main.this, Login.class);
                 startActivity(intent);
                 dialog.dismiss();
 
