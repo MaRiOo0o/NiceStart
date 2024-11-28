@@ -10,5 +10,6 @@
     <p>Tambien cuenta con otra pantalla de registro, que permite volver a la pantalla de inicio de sesion o acceder a la pantalla principal</p>
     <img src="img/Signup.png" alt="singup">
     <p>La pantalla principal cuenta con una imagen de fondo y una barra superior, que contiene el acceso a un mensaje emergente o a la pantalla del perfil</p>
+    <img src="img/main.png" alt="main">
     <p>En esta ultima pantalla se encuentra el perfil del usuario, donde se encuentran las redes sociales del usuario y una breve descripción de si mismo</p>
     <img src="img/Perfil.png" alt="Profile">
