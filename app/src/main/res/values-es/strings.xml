@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NiCESTART</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="signup">Darse de alta</string>
+    <string name="vaccinate">vacunarse</string>
+    <string name="emoji">emoticono</string>
+    <string name="cancel">Cancelar</string>
+    <string name="sign_up">Registrasre</string>
+</resources>
