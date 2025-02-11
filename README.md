@@ -13,3 +13,5 @@
     <img src="img/main.png" alt="main">
     <p>En esta ultima pantalla se encuentra el perfil del usuario, donde se encuentran las redes sociales del usuario y una breve descripción de si mismo</p>
     <img src="img/Perfil.png" alt="Profile">
+    <p>Se ha añadido tambien un menu, en el que es posible desplazarse de forma lateral entre pantallas</p>
+    <img src="img/MainBn.mp4" alt="Profile">
