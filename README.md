@@ -24,4 +24,4 @@
     <p>Y por último, se ha añadido un menu inferior que cuenta con un botón flotante</p>
     <img src="img/MainBab.png" alt="MainBab" height="800" width="400">
     <p>Toda la aplicacion esta en español y traducida al ingles</p>
-    <img src="img/Traducciones.png" alt="Traducciones" height="800" width="400">
+    <img src="img/Traducciones.png" alt="Traducciones">
