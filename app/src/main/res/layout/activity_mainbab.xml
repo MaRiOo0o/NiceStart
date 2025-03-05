@@ -10,7 +10,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
         android:layout_width="match_parent"
-        android:layout_height="92dp"
+        android:layout_height="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -21,7 +21,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             app:fabAlignmentMode="center"
-            app:menu="@menu/bottom_app_bar_menu"
+            app:menu="@menu/bottom_app_bar"
+            app:fabAnchorMode="cradle"
+            app:fabCradleRoundedCornerRadius="30dp"
+            app:fabCradleMargin="20dp"
             app:navigationIcon="@drawable/ic_key"
             />
 
@@ -32,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/lima"
-            android:src="@drawable/ic_key"
+            android:src="@drawable/ic_action"
             app:fabSize="normal"
             app:layout_anchor="@+id/bottom_app_bar"
             app:tint="@android:color/white"

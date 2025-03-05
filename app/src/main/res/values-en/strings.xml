@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NiCESTART</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="vaccinate">Vaccinate</string>
+    <string name="emoji">emoji</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign_up">Sing up</string>
 </resources>
