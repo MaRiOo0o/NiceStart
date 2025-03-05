@@ -9,12 +9,12 @@
     <img src="img/Login.png" alt="login">
     <p>La pantalla de login tambien cuenta con un modo osucro y un modo landscape</p>
     <img src="img/LoginDark.png" alt="LoginDark" height="800" width="400">
-    <img src="img/LoginLandscape.png" alt="LoginLandscape" height="800" width="400">
+    <img src="img/LoginLandscape.png" alt="LoginLandscape">
     <p>Tambien cuenta con otra pantalla de registro, que permite volver a la pantalla de inicio de sesion o acceder a la pantalla principal</p>
     <img src="img/Signup.png" alt="singup">
     <p>La pantalla de signup tambien cuenta con un modo osucro y un modo landscape</p>
     <img src="img/SingupDark.png" alt="SingupDark" height="800" width="400">
-    <img src="img/SingupLandscape.png" alt="SingupLandscape" height="800" width="400">
+    <img src="img/SingupLandscape.png" alt="SingupLandscape">
     <p>La pantalla principal cuenta con una imagen de fondo y una barra superior, que contiene el acceso a un mensaje emergente o a la pantalla del perfil</p>
     <img src="img/main.png" alt="main">
     <p>En esta ultima pantalla se encuentra el perfil del usuario, donde se encuentran las redes sociales del usuario y una breve descripción de si mismo</p>
